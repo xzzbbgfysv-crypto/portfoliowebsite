@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<body>
+    <a href="index.html" style="color:rgb(255, 255, 255); text-decoration:underline; font-family:courier; font-size:28px; padding-top: 40px; padding-left: 40px;">home</a>
+    <h1 style="text-align: center; font-family:courier; font-size:36px; color:rgb(23, 86, 45);">my plants</h1>
+<style>
+    body {
+        background-image: url('Photos/butterfly.jpeg');
+        background-size: 100%;
+        background-attachment: fixed;
+        margin: 0;
+
+    }
+
+    .container {
+        display: flex;
+        align-items:center; /* vertical centering */
+        gap: 30px; /* space between image and text */
+        width: 1000px;
+        margin: 40px auto; /* even spacing between rows */
+        transition: filter 0.5s ease;
+    }
+
+    .container img {
+        width: 600px;
+        border-radius: 8px;
+        padding: 0px;
+        border: 5px solid rgb(0, 0, 0);
+        border-radius: 5px;
+        transition: transform 0.5s ease;
+    }
+
+    .container:hover img {
+        transform: scale(1.08);
+    }
+
+    body:has(.container:hover) .container  {
+        filter: blur(4px) brightness(0.6);
+    }
+
+    body:has(.container:hover) .container:hover {
+        filter: blur(0px) brightness(1);
+    }
+
+    .text {
+        font-family: courier;
+        font-size: 16px;
+        color: rgb(255, 255, 255);
+        max-width: 350px;
+        padding-top: 10px;;
+    }
+
+    .text h2 {
+        margin: 0 0 10px 0;
+    }
+</style>
+</head>
+
+<body style="justify-content: left;">
+
+<div class="container" style="padding-left:40px;">
+    <img src="Photos/monsteraleaf.jpeg" alt="monstera">
+    <div class="text">
+        <h2>monstera leaf</h2>
+        <p>monstera deliciosa</p>
+    </div>
+</div>
+
+<div class="container"; style="padding-left:40px;">
+    <img src="Photos/collection.jpeg" alt="collection">
+    <div class="text">
+        <h2>plant collection</h2>
+        <p>philodendron white wizard, philodendron melanochrysum, kalenchoe, tradescantia zebrina, fiddle leaf fig, philodendron black queen royal </p>
+    </div>
+</div>
+
+<div class="container" style="padding-left:40px;">
+    <img src="Photos/philo.jpeg" alt="philo">
+    <div class="text">
+        <h2>philodendron heart</h2>
+        <p>philodendron brasil</p>
+    </div>
+</div>
+
+<div class="container" style="padding-left:40px;">
+    <img src="Photos/melano.jpeg" alt="melano">
+    <div class="text">
+        <h2>philodendron</h2>
+        <p>philodendron melanochrysum</p>
+    </div>
+</div>
+
+<div class="container" style="padding-left:40px;">
+    <img src="Photos/kalanchoe.jpeg" alt="Kalenchoe">
+    <div class="text">
+        <h2>kalanchoe sprouts</h2>
+        <p>kalanchoe</p>
+    </div>
+</div>
+
+</body>
+</html>

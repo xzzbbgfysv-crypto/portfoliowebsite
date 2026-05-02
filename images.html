@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<body>
+    <a href="index.html" style="color:rgb(255, 255, 255); text-decoration:underline; font-family:courier; font-size:28px; padding-top: 40px; padding-left: 40px;">home</a>
+    <h1 style="text-align: center; font-family:courier; font-size:36px; color:rgb(255, 255, 255);">gallery - contact for printing or jpeg </h1>
+<style>
+    body {
+        background-image: url('Photos/iron.jpg');
+        background-size: cover;
+        background-attachment: scroll;
+        margin: 0;
+
+    }
+
+    .container {
+        display: flex;
+        align-items:center; /* vertical centering */
+        gap: 30px; /* space between image and text */
+        width: 1000px;
+        margin: 40px auto; /* even spacing between rows */
+        transition: filter 0.5s ease;
+    }
+
+    .container img {
+        width: 600px;
+        border-radius: 8px;
+        padding: 0px;
+        border: 5px solid rgb(0, 0, 0);
+        border-radius: 5px;
+        transition: transform 0.5s ease;
+    }
+
+    .container:hover img {
+        transform: scale(1.08);
+    }
+
+    body:has(.container:hover) .container  {
+        filter: blur(4px) brightness(0.6);
+    }
+
+    body:has(.container:hover) .container:hover {
+        filter: blur(0px) brightness(1);
+    }
+
+    .text {
+        font-family: courier;
+        font-size: 16px;
+        color: rgb(255, 255, 255);
+        max-width: 350px;
+        padding-top: 10px;;
+    }
+
+    .text h2 {
+        margin: 0 0 10px 0;
+    }
+</style>
+</head>
+
+<body style="justify-content: left;">
+
+<div class="container" style="padding-left:40px;">
+    <img src="Photos/Iron.jpg" alt="Dandelion">
+    <div class="text">
+        <h2>iron</h2>
+        <p>iron meteorite - clifton, maine</p>
+    </div>
+</div>
+
+<div class="container"; style="padding-left:40px;">
+    <img src="Photos/tigerlily.jpg" alt="Tigerlily">
+    <div class="text">
+        <h2>tigerlily</h2>
+        <p>tigerlily blooming in the summer - orland, maine</p>
+    </div>
+</div>
+
+<div class="container" style="padding-left:40px;">
+    <img src="Photos/canal.jpg" alt="canal">
+    <div class="text">
+        <h2>canal</h2>
+        <p>canal in fall - bangor, maine</p>
+    </div>
+</div>
+
+<div class="container" style="padding-left:40px;">
+    <img src="Photos/BeeEdited.jpg" alt="Honeybee">
+    <div class="text">
+        <h2>honeybee</h2>
+        <p>honeybee pollinating a flower - orland, maine</p>
+    </div>
+</div>
+
+<div class="container" style="padding-left:40px;">
+    <img src="Photos/blueberries.jpg" alt="Blueberries">
+    <div class="text">
+        <h2>blueberries</h2>
+        <p>ripe blueberries - orland, maine</p>
+    </div>
+</div>
+
+<div class="container" style="padding-left:40px;">
+    <img src="Photos/dandelion.jpg" alt="Dandelion">
+    <div class="text">
+        <h2>dandelion</h2>
+        <p>dandelion wisps - orland, maine</p>
+    </div>
+</div>
+
+
+
+</body>
+</html>
